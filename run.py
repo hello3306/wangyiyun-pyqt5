@@ -4,8 +4,10 @@ Create by 2019/4/26 21:13
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
-from app.view import LoginMain, mainWindowui
-from app.config import setting
+from app.view.main import mainWindowui
+from app.view.login import LoginMain
+from app.view.user import user
+from app.view.hospital import hospital
 
 
 class runMainWindoe(QtWidgets.QWidget):
@@ -22,9 +24,10 @@ class runMainWindoe(QtWidgets.QWidget):
         self.password = self.ui.lineEdit_2.text()
         if self.user == "" or self.password == "":
             try:
-                self.msg()
-                print(setting.API)
-
+                QMessageBox.warning(self,  # 使用infomation信息框
+                                    "警告",
+                                    "用户名或密码不能为空(＾Ｕ＾)ノ~ＹＯ",
+                                    QMessageBox.Yes)
             except Exception as e:
                 print(e)
 
@@ -32,20 +35,30 @@ class runMainWindoe(QtWidgets.QWidget):
         else:
             self.showMain()
 
-    def msg(self):
-        QMessageBox.warning(self,  # 使用infomation信息框
-                            "警告",
-                            "用户名或密码不能为空(＾Ｕ＾)ノ~ＹＯ",
-                            QMessageBox.Yes)
-
+    # 显示主页
     def showMain(self):
         self.Main = QMainWindow()
         self.main = mainWindowui.Ui_MainWindow()
         self.main.setupUi(self.Main)
         self.Main.show()
-        print(self.user)
-        self.main.label.setText(self.user)
+
+        # 按钮点击事件
+        self.main.pushButton.clicked.connect(self.showUser)
+        self.main.pushButton_2.clicked.connect(self.showHospital)
         Form.close()
+
+    # 产妇管理
+    def showUser(self):
+        self.UserMain = QMainWindow()
+        self.user = user.Ui_UserMainWindow()
+        self.user.setupUi(self.UserMain)
+        self.UserMain.show()
+
+    def showHospital(self):
+        self.HospitalMain = QMainWindow()
+        self.hospital = hospital.Ui_HospitalMainWindow()
+        self.hospital.setupUi(self.HospitalMain)
+        self.HospitalMain.show()
 
 
 if __name__ == "__main__":

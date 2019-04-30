@@ -7,6 +7,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import Qt
+
 
 class Ui_LoginMainWindow(object):
     def setupUi(self, LoginMainWindow):
@@ -53,6 +55,8 @@ class Ui_LoginMainWindow(object):
 
         self.retranslateUi(LoginMainWindow)
         QtCore.QMetaObject.connectSlotsByName(LoginMainWindow)
+
+
 
     def retranslateUi(self, LoginMainWindow):
         _translate = QtCore.QCoreApplication.translate
