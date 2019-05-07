@@ -6,8 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtCore import Qt
+from PyQt5 import QtCore, QtWidgets
 
 
 class Ui_LoginMainWindow(object):
@@ -56,12 +55,9 @@ class Ui_LoginMainWindow(object):
         self.retranslateUi(LoginMainWindow)
         QtCore.QMetaObject.connectSlotsByName(LoginMainWindow)
 
-
-
     def retranslateUi(self, LoginMainWindow):
         _translate = QtCore.QCoreApplication.translate
         LoginMainWindow.setWindowTitle(_translate("LoginMainWindow", "登录"))
         self.pushButton.setText(_translate("LoginMainWindow", "登录"))
         self.label.setText(_translate("LoginMainWindow", "用户名："))
         self.label_2.setText(_translate("LoginMainWindow", "密  码："))
-

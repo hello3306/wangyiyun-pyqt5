@@ -9,6 +9,9 @@ verify_ssl = true
 pyqt5 = "*"
 pyqt5-tools = "*"
 pyqy5-tools = "*"
+pyecharts = "*"
+echarts-china-cities-pypkg = "*"
+pyqt5-qwebengineview = "*"
 
 [requires]
 python_version = "3.7"

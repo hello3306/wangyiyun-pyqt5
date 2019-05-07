@@ -1,13 +1,17 @@
 """
 Create by 2019/4/26 21:13
 """
+import time
+
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 
-from app.view.main import mainWindowui
-from app.view.login import LoginMain
-from app.view.user import user
+
+from app.model.hospital import hospitalModel
 from app.view.hospital import hospital
+from app.view.login import LoginMain
+from app.view.main import mainWindowui
+from app.view.user import user
 
 
 class runMainWindoe(QtWidgets.QWidget):
@@ -45,6 +49,7 @@ class runMainWindoe(QtWidgets.QWidget):
         # 按钮点击事件
         self.main.pushButton.clicked.connect(self.showUser)
         self.main.pushButton_2.clicked.connect(self.showHospital)
+
         Form.close()
 
     # 产妇管理
@@ -54,11 +59,14 @@ class runMainWindoe(QtWidgets.QWidget):
         self.user.setupUi(self.UserMain)
         self.UserMain.show()
 
+    # 医院管理
     def showHospital(self):
         self.HospitalMain = QMainWindow()
         self.hospital = hospital.Ui_HospitalMainWindow()
         self.hospital.setupUi(self.HospitalMain)
         self.HospitalMain.show()
+        hModel = hospitalModel(self.hospital)
+        hModel.run()
 
 
 if __name__ == "__main__":

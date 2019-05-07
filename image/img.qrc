@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource prefix="/image">
+    <file alias="user.png">user.png</file>
+     <file alias="qr.png">二维码.png</file>
+     <file alias="hospital.png">医院.png</file>
+     <file alias="new.png">新闻.png</file>
+     <file alias="msg.png">消息.png</file>
+     <file alias="sucaiku.png">素材库.png</file>
+     <file alias="dingdang.png">订 单.png</file>
+     <file alias="shebei.png">设备.png</file>
+  </qresource>
+</RCC>
