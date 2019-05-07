@@ -108,7 +108,7 @@
      <string>订单管理</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -323,7 +323,7 @@ font : 14px;
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -521,9 +521,32 @@ font : 14px;
        <property name="text">
         <string/>
        </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../image/素材库.png</normaloff>../../../image/素材库.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>48</width>
+         <height>48</height>
+        </size>
+       </property>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>280</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>素材下载</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

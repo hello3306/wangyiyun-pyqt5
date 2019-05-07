@@ -36,13 +36,13 @@ class Ui_MainWindow(object):
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
         self.label_7.setGeometry(QtCore.QRect(440, 280, 54, 12))
         self.label_7.setObjectName("label_7")
-        self.widget = QtWidgets.QWidget(self.centralwidget)
-        self.widget.setGeometry(QtCore.QRect(20, 10, 711, 111))
-        self.widget.setObjectName("widget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(20, 10, 711, 111))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.pushButton = QtWidgets.QPushButton(self.widget)
+        self.pushButton = QtWidgets.QPushButton(self.layoutWidget)
         self.pushButton.setEnabled(True)
         self.pushButton.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton.setMaximumSize(QtCore.QSize(226, 16777215))
@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
         self.pushButton.setIconSize(QtCore.QSize(48, 48))
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
-        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_2 = QtWidgets.QPushButton(self.layoutWidget)
         self.pushButton_2.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_2.setStyleSheet("text-align : center;\n"
 "background-color : white;\n"
@@ -110,7 +110,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_2.setObjectName("pushButton_2")
         self.horizontalLayout.addWidget(self.pushButton_2)
-        self.pushButton_3 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_3 = QtWidgets.QPushButton(self.layoutWidget)
         self.pushButton_3.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_3.setStyleSheet("text-align : center;\n"
 "background-color : white;\n"
@@ -142,7 +142,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_3.setObjectName("pushButton_3")
         self.horizontalLayout.addWidget(self.pushButton_3)
-        self.pushButton_4 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_4 = QtWidgets.QPushButton(self.layoutWidget)
         self.pushButton_4.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_4.setStyleSheet("text-align : center;\n"
 "background-color : white;\n"
@@ -174,13 +174,13 @@ class Ui_MainWindow(object):
         self.pushButton_4.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_4.setObjectName("pushButton_4")
         self.horizontalLayout.addWidget(self.pushButton_4)
-        self.widget1 = QtWidgets.QWidget(self.centralwidget)
-        self.widget1.setGeometry(QtCore.QRect(20, 150, 711, 121))
-        self.widget1.setObjectName("widget1")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.widget1)
+        self.layoutWidget1 = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget1.setGeometry(QtCore.QRect(20, 150, 711, 121))
+        self.layoutWidget1.setObjectName("layoutWidget1")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.pushButton_5 = QtWidgets.QPushButton(self.widget1)
+        self.pushButton_5 = QtWidgets.QPushButton(self.layoutWidget1)
         self.pushButton_5.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_5.setStyleSheet("\n"
 "text-align : center;\n"
@@ -214,7 +214,7 @@ class Ui_MainWindow(object):
         self.pushButton_5.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_5.setObjectName("pushButton_5")
         self.horizontalLayout_2.addWidget(self.pushButton_5)
-        self.pushButton_6 = QtWidgets.QPushButton(self.widget1)
+        self.pushButton_6 = QtWidgets.QPushButton(self.layoutWidget1)
         self.pushButton_6.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_6.setStyleSheet("\n"
 "text-align : center;\n"
@@ -248,7 +248,7 @@ class Ui_MainWindow(object):
         self.pushButton_6.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_6.setObjectName("pushButton_6")
         self.horizontalLayout_2.addWidget(self.pushButton_6)
-        self.pushButton_7 = QtWidgets.QPushButton(self.widget1)
+        self.pushButton_7 = QtWidgets.QPushButton(self.layoutWidget1)
         self.pushButton_7.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_7.setStyleSheet("\n"
 "text-align : center;\n"
@@ -282,7 +282,7 @@ class Ui_MainWindow(object):
         self.pushButton_7.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_7.setObjectName("pushButton_7")
         self.horizontalLayout_2.addWidget(self.pushButton_7)
-        self.pushButton_8 = QtWidgets.QPushButton(self.widget1)
+        self.pushButton_8 = QtWidgets.QPushButton(self.layoutWidget1)
         self.pushButton_8.setMinimumSize(QtCore.QSize(0, 91))
         self.pushButton_8.setStyleSheet("\n"
 "text-align : center;\n"
@@ -310,8 +310,15 @@ class Ui_MainWindow(object):
 "\n"
 "")
         self.pushButton_8.setText("")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("image/素材库.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_8.setIcon(icon7)
+        self.pushButton_8.setIconSize(QtCore.QSize(48, 48))
         self.pushButton_8.setObjectName("pushButton_8")
         self.horizontalLayout_2.addWidget(self.pushButton_8)
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(620, 280, 54, 12))
+        self.label_8.setObjectName("label_8")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 752, 23))
@@ -334,4 +341,5 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "消息管理"))
         self.label_6.setText(_translate("MainWindow", "信息管理"))
         self.label_7.setText(_translate("MainWindow", "订单管理"))
+        self.label_8.setText(_translate("MainWindow", "素材下载"))
 
