@@ -2,6 +2,6 @@
  Hello 
 
 """
-API = "123456"
-URL_LOGIN = ''
-USER_SHOW = False
+BASE_URL = "https://api.ljxcx.club/api/v1"
+TTL = 3600
+MAXSIZE = 256

@@ -12,6 +12,8 @@ pyqy5-tools = "*"
 pyecharts = "*"
 echarts-china-cities-pypkg = "*"
 pyqt5-qwebengineview = "*"
+cacheout = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
