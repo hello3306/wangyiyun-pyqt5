@@ -119,7 +119,9 @@ imports:
  &#8226;   <a href="#_winreg">_winreg</a>
  &#8226;   <a href="#abc">abc</a>
  &#8226;   <a href="#app.config.setting">app.config.setting</a>
+ &#8226;   <a href="#app.model.user">app.model.user</a>
  &#8226;   <a href="#app.server.login">app.server.login</a>
+ &#8226;   <a href="#app.server.user">app.server.user</a>
  &#8226;   <a href="#app.view.login">app.view.login</a>
  &#8226;   <a href="#app.view.login.LoginMain">app.view.login.LoginMain</a>
  &#8226;   <a href="#app.view.main">app.view.main</a>
@@ -630,6 +632,7 @@ imported by:
  &#8226;   <a href="#PyQt5.QtGui">PyQt5.QtGui</a>
  &#8226;   <a href="#PyQt5.QtWidgets">PyQt5.QtWidgets</a>
  &#8226;   <a href="#PyQt5.sip">PyQt5.sip</a>
+ &#8226;   <a href="#app.model.user">app.model.user</a>
  &#8226;   <a href="#app.view.login.LoginMain">app.view.login.LoginMain</a>
  &#8226;   <a href="#app.view.main.mainWindowui">app.view.main.mainWindowui</a>
  &#8226;   <a href="#image.img">image.img</a>
@@ -654,6 +657,7 @@ imported by:
  &#8226;   <a href="#PyQt5.QtGui">PyQt5.QtGui</a>
  &#8226;   <a href="#PyQt5.QtWidgets">PyQt5.QtWidgets</a>
  &#8226;   <a href="#app.view.login.LoginMain">app.view.login.LoginMain</a>
+ &#8226;   <a href="#app.view.main.mainWindowui">app.view.main.mainWindowui</a>
  &#8226;   <a href="#image.img">image.img</a>
 
   </div>
@@ -694,6 +698,7 @@ imports:
 imported by:
     <a href="#PyQt5">PyQt5</a>
  &#8226;   <a href="#PyQt5.QtWidgets">PyQt5.QtWidgets</a>
+ &#8226;   <a href="#app.model.user">app.model.user</a>
  &#8226;   <a href="#app.view.login.LoginMain">app.view.login.LoginMain</a>
  &#8226;   <a href="#app.view.main.mainWindowui">app.view.main.mainWindowui</a>
  &#8226;   <a href="#run.py">run.py</a>
@@ -1877,6 +1882,7 @@ imported by:
 <span class="moduletype">Package</span>  <div class="import">
 imported by:
     <a href="#app.config">app.config</a>
+ &#8226;   <a href="#app.model">app.model</a>
  &#8226;   <a href="#app.server">app.server</a>
  &#8226;   <a href="#app.view">app.view</a>
 
@@ -1911,7 +1917,43 @@ imports:
   <div class="import">
 imported by:
     <a href="#app.server.login">app.server.login</a>
+ &#8226;   <a href="#app.server.user">app.server.user</a>
  &#8226;   <a href="#run.py">run.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="app.model"></a>
+  <a target="code" href="///C:/Users/Administrator/Desktop/pyqt5-demo/wangyiyun-pyqt5/app/model/__init__.py" type="text/plain"><tt>app.model</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#app">app</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#app.model.user">app.model.user</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="app.model.user"></a>
+  <a target="code" href="///C:/Users/Administrator/Desktop/pyqt5-demo/wangyiyun-pyqt5/app/model/user.py" type="text/plain"><tt>app.model.user</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PyQt5">PyQt5</a>
+ &#8226;   <a href="#PyQt5.QtWidgets">PyQt5.QtWidgets</a>
+ &#8226;   <a href="#app.model">app.model</a>
+ &#8226;   <a href="#datetime">datetime</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#run.py">run.py</a>
 
   </div>
 
@@ -1928,6 +1970,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#app.server.login">app.server.login</a>
+ &#8226;   <a href="#app.server.user">app.server.user</a>
 
   </div>
 
@@ -1936,6 +1979,24 @@ imported by:
 <div class="node">
   <a name="app.server.login"></a>
   <a target="code" href="///C:/Users/Administrator/Desktop/pyqt5-demo/wangyiyun-pyqt5/app/server/login.py" type="text/plain"><tt>app.server.login</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#app.config.setting">app.config.setting</a>
+ &#8226;   <a href="#app.server">app.server</a>
+ &#8226;   <a href="#requests">requests</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#run.py">run.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="app.server.user"></a>
+  <a target="code" href="///C:/Users/Administrator/Desktop/pyqt5-demo/wangyiyun-pyqt5/app/server/user.py" type="text/plain"><tt>app.server.user</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#app.config.setting">app.config.setting</a>
@@ -2030,6 +2091,7 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PyQt5">PyQt5</a>
+ &#8226;   <a href="#PyQt5.QtCore">PyQt5.QtCore</a>
  &#8226;   <a href="#PyQt5.QtGui">PyQt5.QtGui</a>
  &#8226;   <a href="#PyQt5.QtWidgets">PyQt5.QtWidgets</a>
  &#8226;   <a href="#app.view.main">app.view.main</a>
@@ -7006,6 +7068,7 @@ imports:
 imported by:
     <a href="#OpenSSL.crypto">OpenSSL.crypto</a>
  &#8226;   <a href="#_strptime">_strptime</a>
+ &#8226;   <a href="#app.model.user">app.model.user</a>
  &#8226;   <a href="#asn1crypto.core">asn1crypto.core</a>
  &#8226;   <a href="#asn1crypto.util">asn1crypto.util</a>
  &#8226;   <a href="#calendar">calendar</a>
@@ -13327,6 +13390,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#app.server.login">app.server.login</a>
+ &#8226;   <a href="#app.server.user">app.server.user</a>
  &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#requests.__version__">requests.__version__</a>
  &#8226;   <a href="#requests._internal_utils">requests._internal_utils</a>

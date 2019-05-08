@@ -8,10 +8,11 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
 
+from app.config.setting import *
+from app.model.user import userModel
+from app.server.login import Login as LoginServer
 from app.view.login import LoginMain
 from app.view.main import mainWindowui
-from app.server.login import Login as LoginServer
-from app.config.setting import *
 
 
 class runMainWindoe(QtWidgets.QWidget):
@@ -22,9 +23,10 @@ class runMainWindoe(QtWidgets.QWidget):
         self.cache = Cache(maxsize=MAXSIZE, ttl=TTL, timer=time.time)
 
     def run(self):
-        self.ui.pushButton.clicked.connect(self.check)
+        self.ui.pushButton.clicked.connect(self.login)
 
-    def check(self):
+    # 登录
+    def login(self):
         self.user = self.ui.lineEdit.text()
         self.password = self.ui.lineEdit_2.text()
         if self.user == "" or self.password == "":
@@ -43,7 +45,6 @@ class runMainWindoe(QtWidgets.QWidget):
             if res.status_code == 200:
                 self.showMain()
                 data = json.loads(res.text)
-                print(data)
                 self.cache.set('token', data['token'])
             else:
                 QMessageBox.warning(self,  # 使用infomation信息框
@@ -57,6 +58,7 @@ class runMainWindoe(QtWidgets.QWidget):
         self.main = mainWindowui.Ui_MainWindow()
         self.main.setupUi(self.Main)
         self.Main.show()
+        self.showUser()
 
         # 按钮点击事件
         self.main.pushButton.clicked.connect(self.showUser)
@@ -67,13 +69,29 @@ class runMainWindoe(QtWidgets.QWidget):
         self.main.pushButton_6.clicked.connect(self.showInformation)
         self.main.pushButton_7.clicked.connect(self.showOrder)
         self.main.pushButton_8.clicked.connect(self.showMaterial)
+        self.main.pushButton_15.clicked.connect(self.searh)
 
         Form.close()
 
+    # 查询
+    def searh(self):
+        text = self.main.lineEdit.text()
+        print(text)
+
     # 产妇管理
     def showUser(self):
+        from app.server.user import User
         self.main.tabWidget.setCurrentIndex(0)
-        print(self.cache.get('token'))
+        user = User(self.cache)
+        res = user.getUserInfo()
+        if res.status_code == 200:
+            data = json.loads(res.text)
+            UserModel = userModel(self.main, data)
+            UserModel.setData()
+            # print(data['data'])
+
+        else:
+            print("请求失败")
         # self.UserMain = QMainWindow()
         # self.user = user.Ui_UserMainWindow()
         # self.user.setupUi(self.UserMain)

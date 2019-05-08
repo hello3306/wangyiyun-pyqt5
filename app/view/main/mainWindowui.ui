@@ -499,8 +499,8 @@ font : 14px;
      <rect>
       <x>120</x>
       <y>30</y>
-      <width>1031</width>
-      <height>891</height>
+      <width>1001</width>
+      <height>881</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -513,81 +513,32 @@ font : 14px;
      <attribute name="title">
       <string>产妇管理</string>
      </attribute>
-     <widget class="QTableWidget" name="tableWidget">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>160</y>
-        <width>1011</width>
-        <height>701</height>
-       </rect>
-      </property>
-      <column>
-       <property name="text">
-        <string>产妇名称</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>手机号码</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>所属医院</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>预产期</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>建档时间</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>产妇信息</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>提交</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>重置密码</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>是否停用</string>
-       </property>
-      </column>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>1011</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QPushButton" name="pushButton_9">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : rgb(182, 179, 179);
 font: bold;
@@ -613,22 +564,22 @@ font : 14px;
 
 
 </string>
-         </property>
-         <property name="text">
-          <string>待完善</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_10">
-         <property name="minimumSize">
-          <size>
-           <width>99</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+          <property name="text">
+           <string>待完善</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="minimumSize">
+           <size>
+            <width>99</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : rgb(218, 84, 46);
 font: bold;
@@ -654,22 +605,22 @@ font : 14px;
 
 
 </string>
-         </property>
-         <property name="text">
-          <string>已完善</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_11">
-         <property name="minimumSize">
-          <size>
-           <width>99</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+          <property name="text">
+           <string>已完善</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="minimumSize">
+           <size>
+            <width>99</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : rgb(255,184,72);
 color:white;
@@ -695,22 +646,22 @@ font : 14px;
 
 
 </string>
-         </property>
-         <property name="text">
-          <string>待制作</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_12">
-         <property name="minimumSize">
-          <size>
-           <width>129</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+          <property name="text">
+           <string>待制作</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="minimumSize">
+           <size>
+            <width>129</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : rgb(34,84,164);
 color:white;
@@ -736,22 +687,22 @@ font : 14px;
 
 
 </string>
-         </property>
-         <property name="text">
-          <string>制作中</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_13">
-         <property name="minimumSize">
-          <size>
-           <width>99</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+          <property name="text">
+           <string>制作中</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="minimumSize">
+           <size>
+            <width>99</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : rgb(39,169,227);
 color:white;
@@ -777,22 +728,22 @@ font : 14px;
 
 
 </string>
-         </property>
-         <property name="text">
-          <string>待审核</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_14">
-         <property name="minimumSize">
-          <size>
-           <width>99</width>
-           <height>71</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+          <property name="text">
+           <string>待审核</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_14">
+          <property name="minimumSize">
+           <size>
+            <width>99</width>
+            <height>71</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : rgb(40,183,121);
 color:white;
@@ -818,28 +769,33 @@ font : 14px;
 
 
 </string>
-         </property>
-         <property name="text">
-          <string>已发布</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>110</y>
-        <width>431</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLineEdit" name="lineEdit">
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+          <property name="text">
+           <string>已发布</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="styleSheet">
+           <string notr="true">
 text-align : center;
 background-color : white;
 font: bold;
@@ -864,19 +820,19 @@ font : 14px;
 
 
 </string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_15">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_15">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
 
 text-align : center;
 background-color : rgb(0, 193, 222);
@@ -903,14 +859,96 @@ font : 14px;
 
 
 </string>
-         </property>
+          </property>
+          <property name="text">
+           <string>搜索</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <column>
          <property name="text">
-          <string>搜索</string>
+          <string>产妇名称</string>
          </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
+        </column>
+        <column>
+         <property name="text">
+          <string>手机号码</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>所属医院</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>预产期</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>建档时间</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>产妇信息</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>提交</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>重置密码</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>是否停用</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
