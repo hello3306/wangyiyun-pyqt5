@@ -1,12 +1,25 @@
-<!DOCTYPE RCC><RCC version="1.0">
- <qresource prefix="/image">
-    <file alias="user.png">user.png</file>
-     <file alias="qr.png">二维码.png</file>
-     <file alias="hospital.png">医院.png</file>
-     <file alias="new.png">新闻.png</file>
-     <file alias="msg.png">消息.png</file>
-     <file alias="sucaiku.png">素材库.png</file>
-     <file alias="dingdang.png">订 单.png</file>
-     <file alias="shebei.png">设备.png</file>
-  </qresource>
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/image">
+        <file alias="user.png">user.png</file>
+        <file alias="qr.png">二维码.png</file>
+        <file alias="hospital.png">医院.png</file>
+        <file alias="new.png">新闻.png</file>
+        <file alias="msg.png">消息.png</file>
+        <file alias="sucaiku.png">素材库.png</file>
+        <file alias="dingdang.png">订 单.png</file>
+        <file alias="shebei.png">设备.png</file>
+        <file alias="用户.png">用户.png</file>
+        <file alias="密码.png">密码.png</file>
+        <file alias="关闭.png">关闭.png</file>
+
+        <file alias="center.jpg">center.jpg</file>
+
+        <file alias="111.gif">111.gif</file>
+        <file alias="456.gif">456.gif</file>
+
+        <file alias="77.gif">77.gif</file>
+        <file alias="233.gif">233.gif</file>
+
+    </qresource>
 </RCC>

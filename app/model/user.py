@@ -45,6 +45,6 @@ class userModel(QtWidgets.QWidget):
             status = '已发布'
         return status
 
-    # 时间戳转换为时间格式釦
+    # 时间戳转换为时间格式
     def time(self, data):
         return (datetime.datetime.utcfromtimestamp(int(data))).strftime("%Y-%m-%d ")

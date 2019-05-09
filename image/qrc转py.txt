@@ -1,0 +1,7 @@
+
+pyrcc5 img.qrc -o img.py
+
+        # ½ûÖ¹×î´ó»¯
+        LoginMainWindow.setFixedSize(LoginMainWindow.width(), LoginMainWindow.height())
+        # Òþ²Ø´°¿Ú±ß¿ò
+        LoginMainWindow.setWindowFlags(Qt.Qt.CustomizeWindowHint)

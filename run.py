@@ -4,6 +4,7 @@ Create by 2019/4/26 21:13
 import json
 import time
 
+from PyQt5.QtCore import *
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
@@ -24,6 +25,7 @@ class runMainWindoe(QtWidgets.QWidget):
 
     def run(self):
         self.ui.pushButton.clicked.connect(self.login)
+
 
     # 登录
     def login(self):
@@ -57,8 +59,11 @@ class runMainWindoe(QtWidgets.QWidget):
         self.Main = QMainWindow()
         self.main = mainWindowui.Ui_MainWindow()
         self.main.setupUi(self.Main)
+
         self.Main.show()
         self.showUser()
+        # 禁止窗口最大化
+        self.Main.setFixedSize(self.Main.width(), self.Main.height())
 
         # 按钮点击事件
         self.main.pushButton.clicked.connect(self.showUser)
