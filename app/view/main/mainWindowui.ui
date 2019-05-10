@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1158</width>
-    <height>958</height>
+    <width>1121</width>
+    <height>971</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,497 +17,20 @@
    <string notr="true">background:rgb(255, 255, 255)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>91</width>
-      <height>891</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>226</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/user.png</normaloff>:/image/user.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="styleSheet">
-        <string notr="true">text-align : center;</string>
-       </property>
-       <property name="text">
-        <string>  产妇管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/hospital.png</normaloff>:/image/hospital.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>  医院管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/shebei.png</normaloff>:/image/shebei.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>  设备管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/qr.png</normaloff>:/image/qr.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>  二维码管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_5">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/msg.png</normaloff>:/image/msg.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>  消息管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_6">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/dingdang.png</normaloff>:/image/dingdang.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>  信息管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_7">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/new.png</normaloff>:/image/new.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_7">
-       <property name="text">
-        <string>  订单管理</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_8">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>51</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">
-text-align : center;
-background-color : white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color : light gray;
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="../../../image/img.qrc">
-         <normaloff>:/image/sucaiku.png</normaloff>:/image/sucaiku.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_8">
-       <property name="text">
-        <string>  素材下载</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>30</y>
-      <width>1001</width>
-      <height>881</height>
+      <x>10</x>
+      <y>150</y>
+      <width>1101</width>
+      <height>751</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -530,138 +53,31 @@ font : 14px;
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QPushButton" name="pushButton_9">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>71</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
-text-align : center;
-background-color : rgb(182, 179, 179);
-font: bold;
-color:white;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color :rgb(0,0,0);
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
+         <layout class="QVBoxLayout" name="verticalLayout_21">
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="styleSheet">
+             <string notr="true">font: 17pt &quot;微软雅黑&quot;;
 </string>
-          </property>
-          <property name="text">
-           <string>待完善</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_10">
-          <property name="minimumSize">
-           <size>
-            <width>99</width>
-            <height>71</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
-text-align : center;
-background-color : rgb(218, 84, 46);
-font: bold;
-color:white;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color :rgb(0,0,0);
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-          </property>
-          <property name="text">
-           <string>已完善</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_11">
-          <property name="minimumSize">
-           <size>
-            <width>99</width>
-            <height>71</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
-text-align : center;
-background-color : rgb(255,184,72);
-color:white;
-font: bold;
-border-color: gray; 
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;}
-QPushButton:pressed
-{text-align : center;
-background-color :rgb(0,0,0);
-font: bold;
-border-color: gray;
-border-width: 2px;
-border-radius: 10px;
-padding: 6px;
-height : 14px;
-border-style: outset;
-font : 14px;
-
-
-</string>
-          </property>
-          <property name="text">
-           <string>待制作</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_12">
-          <property name="minimumSize">
-           <size>
-            <width>129</width>
-            <height>71</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_12">
+            <property name="minimumSize">
+             <size>
+              <width>129</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
 text-align : center;
 background-color : rgb(34,84,164);
 color:white;
@@ -687,22 +103,99 @@ font : 14px;
 
 
 </string>
-          </property>
-          <property name="text">
-           <string>制作中</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>制作中</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_13">
-          <property name="minimumSize">
-           <size>
-            <width>99</width>
-            <height>71</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
+         <layout class="QVBoxLayout" name="verticalLayout_20">
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="styleSheet">
+             <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string> 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_11">
+            <property name="minimumSize">
+             <size>
+              <width>99</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+text-align : center;
+background-color : rgb(255,184,72);
+color:white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>待制作</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QLabel" name="label_19">
+            <property name="styleSheet">
+             <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_13">
+            <property name="minimumSize">
+             <size>
+              <width>99</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
 text-align : center;
 background-color : rgb(39,169,227);
 color:white;
@@ -728,22 +221,158 @@ font : 14px;
 
 
 </string>
-          </property>
-          <property name="text">
-           <string>待审核</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>待审核</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_14">
-          <property name="minimumSize">
-           <size>
-            <width>99</width>
-            <height>71</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="styleSheet">
+             <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+text-align : center;
+background-color : rgb(182, 179, 179);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>待完善</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <widget class="QLabel" name="label_21">
+            <property name="styleSheet">
+             <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="minimumSize">
+             <size>
+              <width>99</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+text-align : center;
+background-color : rgb(218, 84, 46);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>已完善</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_23">
+          <item>
+           <widget class="QLabel" name="label_22">
+            <property name="styleSheet">
+             <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_14">
+            <property name="minimumSize">
+             <size>
+              <width>99</width>
+              <height>71</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
 text-align : center;
 background-color : rgb(40,183,121);
 color:white;
@@ -769,11 +398,13 @@ font : 14px;
 
 
 </string>
-          </property>
-          <property name="text">
-           <string>已发布</string>
-          </property>
-         </widget>
+            </property>
+            <property name="text">
+             <string>已发布</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </item>
@@ -959,47 +590,37 @@ font : 14px;
      <attribute name="title">
       <string>设备管理</string>
      </attribute>
-     <widget class="QTabWidget" name="tabWidget_2">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>20</y>
-        <width>1001</width>
-        <height>841</height>
+        <y>10</y>
+        <width>1091</width>
+        <height>721</height>
        </rect>
       </property>
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="tab_9">
-       <attribute name="title">
-        <string>设备装机</string>
-       </attribute>
-       <widget class="QWidget" name="">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>-10</y>
-          <width>991</width>
-          <height>801</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <spacer name="horizontalSpacer_5">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
            <item>
             <widget class="QPushButton" name="pushButton_16">
              <property name="minimumSize">
@@ -1038,6 +659,24 @@ font : 14px;
              </property>
              <property name="text">
               <string>待安装</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -1082,6 +721,24 @@ font : 14px;
              </property>
             </widget>
            </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
            <item>
             <widget class="QPushButton" name="pushButton_18">
              <property name="minimumSize">
@@ -1120,6 +777,24 @@ font : 14px;
              </property>
              <property name="text">
               <string>待检测</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -1164,6 +839,24 @@ font : 14px;
              </property>
             </widget>
            </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
            <item>
             <widget class="QPushButton" name="pushButton_20">
              <property name="minimumSize">
@@ -1202,6 +895,24 @@ font : 14px;
              </property>
              <property name="text">
               <string>待入库</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -1246,6 +957,24 @@ font : 14px;
              </property>
             </widget>
            </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="styleSheet">
+              <string notr="true">font: 17pt &quot;微软雅黑&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
            <item>
             <widget class="QPushButton" name="pushButton_22">
              <property name="minimumSize">
@@ -1257,7 +986,7 @@ font : 14px;
              <property name="styleSheet">
               <string notr="true">
 text-align : center;
-background-color : rgb(40,183,121);
+background-color : rgb(0,193,222);
 color:white;
 font: bold;
 border-color: gray; 
@@ -1289,72 +1018,1322 @@ font : 14px;
            </item>
           </layout>
          </item>
-         <item>
-          <spacer name="horizontalSpacer_6">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QTabWidget" name="tabWidget_3">
-           <property name="styleSheet">
-            <string notr="true">background-img:url(:/image/shebei.png)</string>
-           </property>
-           <property name="currentIndex">
-            <number>0</number>
-           </property>
-           <widget class="QWidget" name="tab_11">
-            <attribute name="title">
-             <string>待安装</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="tab_12">
-            <attribute name="title">
-             <string>已安装</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="tab_13">
-            <attribute name="title">
-             <string>待检测</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="tab_14">
-            <attribute name="title">
-             <string>已检测</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="tab_15">
-            <attribute name="title">
-             <string>待入库</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="tab_16">
-            <attribute name="title">
-             <string>已入库</string>
-            </attribute>
-           </widget>
-           <widget class="QWidget" name="tab_17">
-            <attribute name="title">
-             <string>已领用</string>
-            </attribute>
-           </widget>
-          </widget>
-         </item>
         </layout>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_10">
-       <attribute name="title">
-        <string>设备管理</string>
-       </attribute>
-      </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_3">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>6</number>
+         </property>
+         <widget class="QWidget" name="tab_11">
+          <attribute name="title">
+           <string>待安装</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>产品名称</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>规格</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>单位</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>剩余数量</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>备注</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_3">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_25">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_26">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>添加材料</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_12">
+          <attribute name="title">
+           <string>已安装</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备ID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备颜色</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备版本</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>螺丝是否完整</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>镜头盖是否盖上</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否安装内存卡</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>内存卡是否格式化</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>摄像头是否校准</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否正常</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库人</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库日期</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_23">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_24">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>添加设备</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_13">
+          <attribute name="title">
+           <string>待检测</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备ID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备颜色</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备版本</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>螺丝是否完整</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>镜头盖是否盖上</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否安装内存卡</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>内存卡是否格式化</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>摄像头是否校准</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否正常</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库人</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库日期</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_4">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_27">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_14">
+          <attribute name="title">
+           <string>已检测</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备ID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备颜色</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备版本</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>螺丝是否完整</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>镜头盖是否盖上</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否安装内存卡</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>内存卡是否格式化</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>摄像头是否校准</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否正常</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库人</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库日期</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_5">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_29">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_15">
+          <attribute name="title">
+           <string>待入库</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备ID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备颜色</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备版本</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>螺丝是否完整</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>镜头盖是否盖上</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否安装内存卡</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>内存卡是否格式化</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>摄像头是否校准</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否正常</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库人</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库日期</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_6">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_31">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_16">
+          <attribute name="title">
+           <string>已入库</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备状态</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>提交</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备ID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备颜色</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备版本</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>螺丝是否完整</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>镜头盖是否盖上</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否安装内存卡</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>内存卡是否格式化</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>摄像头是否校准</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备是否正常</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库人</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库日期</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_7">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_33">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_17">
+          <attribute name="title">
+           <string>已领用</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>1081</width>
+             <height>491</height>
+            </rect>
+           </property>
+           <column>
+            <property name="text">
+             <string>序号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备ID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备颜色</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>设备版本</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>入库日期</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>领用人</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>领取日期</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>领用医院</string>
+            </property>
+           </column>
+          </widget>
+          <widget class="QWidget" name="layoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>1081</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_8">
+              <property name="styleSheet">
+               <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_35">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_4">
@@ -1383,13 +2362,568 @@ font : 14px;
      </attribute>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/image/国家健康医疗大数据展示平台.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>1101</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>226</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/user.png</normaloff>:/image/user.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">text-align : center;</string>
+         </property>
+         <property name="text">
+          <string>产妇管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/hospital.png</normaloff>:/image/hospital.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>医院管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/shebei.png</normaloff>:/image/shebei.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>设备管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/qr.png</normaloff>:/image/qr.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>二维码管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/msg.png</normaloff>:/image/msg.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">text-align : center;</string>
+         </property>
+         <property name="text">
+          <string>消息管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/dingdang.png</normaloff>:/image/dingdang.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>信息管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/new.png</normaloff>:/image/new.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>订单管理</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+text-align : center;
+background-color : white;
+font: bold;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color : light gray;
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../image/img.qrc">
+           <normaloff>:/image/sucaiku.png</normaloff>:/image/sucaiku.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>素材下载</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1158</width>
+     <width>1121</width>
      <height>23</height>
     </rect>
    </property>
