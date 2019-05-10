@@ -115,16 +115,16 @@ class Ui_LoginMainWindow(object):
         self.statusbar.setObjectName("statusbar")
         LoginMainWindow.setStatusBar(self.statusbar)
 
-        # 禁止最大化
-        LoginMainWindow.setFixedSize(LoginMainWindow.width(), LoginMainWindow.height())
-        # 隐藏窗口边框
-        LoginMainWindow.setWindowFlags(Qt.Qt.CustomizeWindowHint)
+        # # 禁止最大化
+        # LoginMainWindow.setFixedSize(LoginMainWindow.width(), LoginMainWindow.height())
+        # # 隐藏窗口边框
+        # LoginMainWindow.setWindowFlags(Qt.Qt.CustomizeWindowHint)
 
-        self.gif = QMovie(':/image/111.gif')
-        self.label_3.setMovie(self.gif)
-        self.gif.start()
+        # self.gif = QMovie(':/image/111.gif')
+        # self.label_3.setMovie(self.gif)
+        # self.gif.start()
 
-        self.pushButton_2.clicked.connect(self.onButtonClick)
+        # self.pushButton_2.clicked.connect(self.onButtonClick)
 
         self.retranslateUi(LoginMainWindow)
         QtCore.QMetaObject.connectSlotsByName(LoginMainWindow)

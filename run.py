@@ -8,9 +8,11 @@ from app.model.user import userModel
 from image.img import *
 from PyQt5.QtCore import *
 from PyQt5 import QtWidgets
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
+from PyQt5 import QtCore, QtGui, QtWidgets, Qt
+from app.model.login import loginModel
 
 from app.config.setting import *
 
@@ -28,7 +30,16 @@ class runMainWindoe(QtWidgets.QWidget):
         self.cache = Cache(maxsize=MAXSIZE, ttl=TTL, timer=time.time)
 
     def run(self):
+        # 实例化登录model
+        login = loginModel(ui)
+        login.run()
         self.ui.pushButton.clicked.connect(self.login)
+        self.ui.pushButton_2.clicked.connect(self.onButtonClick)
+
+    # 关闭登录窗口
+    def onButtonClick(self):
+        qApp = QApplication.instance()
+        qApp.quit()
 
     # 登录
     def login(self):
@@ -187,6 +198,12 @@ if __name__ == "__main__":
     ui.setupUi(Form)
     mains = runMainWindoe(ui)
     mains.run()
+    # 设置登录框的图标
     Form.setWindowIcon(QIcon(':/image/大数据1.png'))
+    # 禁止最大化
+    Form.setFixedSize(Form.width(), Form.height())
+    # 隐藏窗口边框
+    Form.setWindowFlags(Qt.Qt.CustomizeWindowHint)
+
     Form.show()
     sys.exit(app.exec_())
