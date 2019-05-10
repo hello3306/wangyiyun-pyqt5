@@ -6,11 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
-from PyQt5.QtWidgets import QApplication
-
-from image.img import *
-from PyQt5.QtGui import QMovie
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 
 class Ui_LoginMainWindow(object):
@@ -106,6 +102,9 @@ class Ui_LoginMainWindow(object):
         self.pushButton_2.setStyleSheet("border-image: url(:/image/关闭.png);")
         self.pushButton_2.setText("")
         self.pushButton_2.setObjectName("pushButton_2")
+        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox.setGeometry(QtCore.QRect(120, 200, 229, 16))
+        self.checkBox.setObjectName("checkBox")
         LoginMainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(LoginMainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 414, 23))
@@ -115,27 +114,11 @@ class Ui_LoginMainWindow(object):
         self.statusbar.setObjectName("statusbar")
         LoginMainWindow.setStatusBar(self.statusbar)
 
-        # # 禁止最大化
-        # LoginMainWindow.setFixedSize(LoginMainWindow.width(), LoginMainWindow.height())
-        # # 隐藏窗口边框
-        # LoginMainWindow.setWindowFlags(Qt.Qt.CustomizeWindowHint)
-
-        # self.gif = QMovie(':/image/111.gif')
-        # self.label_3.setMovie(self.gif)
-        # self.gif.start()
-
-        # self.pushButton_2.clicked.connect(self.onButtonClick)
-
         self.retranslateUi(LoginMainWindow)
         QtCore.QMetaObject.connectSlotsByName(LoginMainWindow)
-
-    #
-    def onButtonClick(self):
-        # sender 是发送信号的对象，此处发送信号的对象是button1按钮
-        qApp = QApplication.instance()
-        qApp.quit()
 
     def retranslateUi(self, LoginMainWindow):
         _translate = QtCore.QCoreApplication.translate
         LoginMainWindow.setWindowTitle(_translate("LoginMainWindow", "MainWindow"))
         self.pushButton.setText(_translate("LoginMainWindow", "登录"))
+        self.checkBox.setText(_translate("LoginMainWindow", "记住密码"))

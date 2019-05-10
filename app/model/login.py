@@ -3,8 +3,8 @@
 
 """
 from PyQt5 import QtWidgets
+from PyQt5.QtCore import QSettings
 from PyQt5.QtGui import QMovie
-from PyQt5.QtWidgets import QApplication
 
 
 class loginModel(QtWidgets.QWidget):
@@ -16,8 +16,11 @@ class loginModel(QtWidgets.QWidget):
         self.ui.gif = QMovie(':/image/111.gif')
         self.ui.label_3.setMovie(self.ui.gif)
         self.ui.gif.start()
-        # self.ui.pushButton_2.clicked.connect(self.onButtonClick)
+        settings = QSettings("config.ini", QSettings.IniFormat)
+        if settings.value("user") and settings.value("password"):
+            self.ui.lineEdit.setText(settings.value("user"))
+            self.ui.lineEdit_2.setText(settings.value("password"))
+            self.ui.checkBox.setChecked(True)
 
-    def onButtonClick(self):
-        qApp = QApplication.instance()
-        qApp.quit()
+        # check = self.ui.checkBox.isChecked()
+        # print(check)

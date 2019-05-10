@@ -33,6 +33,7 @@ class runMainWindoe(QtWidgets.QWidget):
         # 实例化登录model
         login = loginModel(ui)
         login.run()
+
         self.ui.pushButton.clicked.connect(self.login)
         self.ui.pushButton_2.clicked.connect(self.onButtonClick)
 
@@ -53,13 +54,18 @@ class runMainWindoe(QtWidgets.QWidget):
                                     QMessageBox.Yes)
             except Exception as e:
                 print(e)
-
-
         else:
             loginserver = LoginServer(self.user, self.password)
             res = loginserver.run()
             if res.status_code == 200:
+                # 用户勾选保存密码
+                if self.ui.checkBox.isChecked():
+                    self.save_login_info(self.user, self.password)
+
+                # 显示主页面
                 self.showMain()
+
+                # 保存token在缓存里面
                 data = json.loads(res.text)
                 self.cache.set('token', data['token'])
             else:
@@ -67,6 +73,11 @@ class runMainWindoe(QtWidgets.QWidget):
                                     "警告",
                                     "用户名或密码错误(＾Ｕ＾)ノ~ＹＯ",
                                     QMessageBox.Yes)
+
+    def save_login_info(self, user, password):
+        self.setting = QSettings("config.ini", QSettings.IniFormat)
+        self.setting.setValue("user", user)
+        self.setting.setValue("password", password)
 
     # 显示主页
     def showMain(self):
