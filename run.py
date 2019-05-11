@@ -7,11 +7,11 @@ import time
 from app.model.user import userModel
 from image.img import *
 from PyQt5.QtCore import *
-from PyQt5 import QtWidgets
-from PyQt5.QtGui import QIcon, QMovie
+
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
+from PyQt5 import QtWidgets, Qt
 from app.model.login import loginModel
 
 from app.config.setting import *
@@ -19,7 +19,9 @@ from app.config.setting import *
 from app.server.login import Login as LoginServer
 from app.view.login import LoginMain
 from app.view.main import mainWindowui
-from app.model.main import mainModel
+
+from app.view.add_material import add_material
+from app.view.add_shebei import add_equipment
 
 
 class runMainWindoe(QtWidgets.QWidget):
@@ -122,6 +124,36 @@ class runMainWindoe(QtWidgets.QWidget):
         self.main.pushButton_20.clicked.connect(self.showSheibei4)
         self.main.pushButton_21.clicked.connect(self.showSheibei5)
         self.main.pushButton_22.clicked.connect(self.showSheibei6)
+
+        # 添加材料点击事件
+        self.main.pushButton_26.clicked.connect(self.showMaterials)
+
+        self.main.pushButton_24.clicked.connect(self.showAddEquipment)
+
+    def showAddEquipment(self):
+        self.equipmentlMain = QMainWindow()
+        self.equipment = add_equipment.Ui_MainWindow()
+        self.equipment.setupUi(self.equipmentlMain)
+        # 设置登录框的图标
+        self.equipmentlMain.setWindowIcon(QIcon(':/image/大数据1.png'))
+        # 禁止最大化
+        self.equipmentlMain.setFixedSize(self.equipmentlMain.width(), self.equipmentlMain.height())
+        self.equipmentlMain.show()
+
+    # 添加材料
+    def showMaterials(self):
+
+        self.materialMain = QMainWindow()
+        self.material = add_material.Ui_MainWindow()
+        self.material.setupUi(self.materialMain)
+        # 设置登录框的图标
+        self.materialMain.setWindowIcon(QIcon(':/image/大数据1.png'))
+        # 禁止最大化
+        self.materialMain.setFixedSize(self.materialMain.width(), self.materialMain.height())
+        self.materialMain.show()
+
+        # material = addMaterial()
+        # material.run()
 
     # 查询
     def searh(self):
