@@ -84,6 +84,7 @@ class runMainWindoe(QtWidgets.QWidget):
         self.Main = QMainWindow()
         self.main = mainWindowui.Ui_MainWindow()
         self.main.setupUi(self.Main)
+
         # mainM = mainModel(self.main)
         # mainM.run()
 
@@ -91,7 +92,9 @@ class runMainWindoe(QtWidgets.QWidget):
         self.Main.setWindowIcon(QIcon(':/image/大数据1.png'))
         # 禁止窗口最大化
         self.Main.setFixedSize(self.Main.width(), self.Main.height())
-
+        # 设置窗体左下角文本信息
+        self.Main.statusBar().showMessage("当前用户：超级管理员")
+        # 主页面按钮点击事件
         self.pushButtons()
 
         self.Main.show()
