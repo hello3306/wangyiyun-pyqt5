@@ -4,22 +4,21 @@ Create by 2019/4/26 21:13
 import json
 import time
 
-from app.model.user import userModel
 from image.img import *
+from app.model.user import userModel
 from PyQt5.QtCore import *
-from PyQt5 import QtWidgets
-from PyQt5.QtGui import QIcon, QMovie
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
+from PyQt5 import QtWidgets, Qt
 from app.model.login import loginModel
-
 from app.config.setting import *
-
 from app.server.login import Login as LoginServer
 from app.view.login import LoginMain
 from app.view.main import mainWindowui
-from app.model.main import mainModel
+from PyQt5.QtWebEngineWidgets import QWebEngineView
+
+
 
 
 class runMainWindoe(QtWidgets.QWidget):
