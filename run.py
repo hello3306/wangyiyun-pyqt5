@@ -4,9 +4,16 @@ Create by 2019/4/26 21:13
 import json
 import time
 
-from app.model.user import userModel
 from image.img import *
+from app.model.user import userModel
 from PyQt5.QtCore import *
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0ad70f6b135c38b950eccefe6c074c6a68430ad3
+>>>>>>> 48535cd7b0129fd249f429e42658cdb45f285b4e
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
@@ -16,11 +23,23 @@ from app.config.setting import *
 from app.server.login import Login as LoginServer
 from app.view.login import LoginMain
 from app.view.main import mainWindowui
+<<<<<<< HEAD
 from app.view.add_material import add_material
 from app.view.add_shebei import add_equipment
 from app.model.addMaterial import addMaterial as MaterialModel
 from app.view.add_material import new_material as newMaterialView
 from app.model.newMaterial import newMaterial as newMaterialModel
+=======
+<<<<<<< HEAD
+
+from app.view.add_material import add_material
+from app.view.add_shebei import add_equipment
+=======
+from PyQt5.QtWebEngineWidgets import QWebEngineView
+
+
+>>>>>>> 0ad70f6b135c38b950eccefe6c074c6a68430ad3
+>>>>>>> 48535cd7b0129fd249f429e42658cdb45f285b4e
 
 
 class runMainWindoe(QtWidgets.QWidget):
