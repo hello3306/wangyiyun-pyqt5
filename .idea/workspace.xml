@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e9f5d0-dee0-4733-9a84-3fd316a4c3cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/model/newMaterial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/server/material.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/addMaterial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/addMaterial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/add_material/add_material.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/add_material/add_material.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/add_material/add_material.ui" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/add_material/add_material.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/main/mainWindowui.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/mainWindowui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/main/mainWindowui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/mainWindowui.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PKG-00.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/run.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/warn-run.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/xref-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/config.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/run.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/center.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/model/newMaterial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="104">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="e#17#28#0" expanded="true" />
               </folding>
@@ -236,23 +212,6 @@
             <path>
               <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
               <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -464,12 +423,12 @@
       <workItem from="1557477063592" duration="3457000" />
       <workItem from="1557535091027" duration="424000" />
       <workItem from="1557543092784" duration="3846000" />
-      <workItem from="1557714614997" duration="16411000" />
+      <workItem from="1557714614997" duration="17279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122815000" />
+    <option name="totallyTimeSpent" value="123683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,7 +441,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3347732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -490,7 +448,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32912844" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838012" weight="0.26376146" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45412844" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45412844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912844" />
@@ -498,7 +456,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32912844" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010799" side_tool="true" weight="0.4977064" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49892008" weight="0.49542335" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49892008" visible="true" weight="0.49541286" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32912844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -882,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/newMaterial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="104">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
