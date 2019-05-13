@@ -13,12 +13,10 @@ from PyQt5.QtWidgets import QAbstractItemView
 from app.server.user import User
 
 
-
-
 class userModel(QtWidgets.QWidget):
     def __init__(self, main, cache):
         self.main = main
-        self.cache= cache
+        self.cache = cache
 
     def run(self):
         # self.thread = RunThread(self.cache)
@@ -36,19 +34,22 @@ class userModel(QtWidgets.QWidget):
         x = 0
         if res:
             data = json.loads(res)
-            self.main.tableWidget.setRowCount(len(data['data']))
-            self.main.tableWidget.setColumnWidth(4, 150)
-            self.main.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
-            for i in data['data']:
-                self.main.tableWidget.setItem(x, 0, QtWidgets.QTableWidgetItem(i['user_name']))
-                self.main.tableWidget.setItem(x, 1, QtWidgets.QTableWidgetItem(i['mobile']))
-                self.main.tableWidget.setItem(x, 2, QtWidgets.QTableWidgetItem(str(i['hospital_id'])))
-                self.main.tableWidget.setItem(x, 3, QtWidgets.QTableWidgetItem(str(self.time(i['predicted_time']))))
-                self.main.tableWidget.setItem(x, 4, QtWidgets.QTableWidgetItem(i['create_time']))
-                self.main.tableWidget.setItem(x, 5, QtWidgets.QTableWidgetItem(self.status(int(i["index"]))))
-                self.main.tableWidget.setItem(x, 8, QtWidgets.QTableWidgetItem(str(i['status'])))
-                self.main.label_17.setText('32')
-                x += 1
+            if data['code'] == 200:
+                self.main.tableWidget.setRowCount(len(data['data']))
+                self.main.tableWidget.setColumnWidth(4, 150)
+                self.main.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
+                for i in data['data']:
+                    self.main.tableWidget.setItem(x, 0, QtWidgets.QTableWidgetItem(i['user_name']))
+                    self.main.tableWidget.setItem(x, 1, QtWidgets.QTableWidgetItem(i['mobile']))
+                    self.main.tableWidget.setItem(x, 2, QtWidgets.QTableWidgetItem(str(i['hospital_id'])))
+                    self.main.tableWidget.setItem(x, 3, QtWidgets.QTableWidgetItem(str(self.time(i['predicted_time']))))
+                    self.main.tableWidget.setItem(x, 4, QtWidgets.QTableWidgetItem(i['create_time']))
+                    self.main.tableWidget.setItem(x, 5, QtWidgets.QTableWidgetItem(self.status(int(i["index"]))))
+                    self.main.tableWidget.setItem(x, 8, QtWidgets.QTableWidgetItem(str(i['status'])))
+                    self.main.label_17.setText('32')
+                    x += 1
+            else:
+                print(data['msg'])
 
     # 产妇状态
     def status(self, index):

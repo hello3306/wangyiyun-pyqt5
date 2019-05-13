@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e9f5d0-dee0-4733-9a84-3fd316a4c3cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/model/addMaterial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/newMaterial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/material.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/PKG-00.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/PYZ-00.pyz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/Tree-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/Tree-01.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/base_library.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/warn-run.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/warn-run.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/run/xref-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/run/xref-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/run.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/run.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/addMaterial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/addMaterial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/add_material/add_material.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/add_material/add_material.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/add_material/add_material.ui" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/add_material/add_material.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/mainWindowui.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/mainWindowui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/main/mainWindowui.ui" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/main/mainWindowui.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/PKG-00.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/run.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/warn-run.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/run/xref-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/run.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/center.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,33 +41,35 @@
     <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$MainHL.coverage" NAME="MainHL Coverage Results" MODIFIED="1556284645401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$test.coverage" NAME="test Coverage Results" MODIFIED="1556509189201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$firsh.coverage" NAME="firsh Coverage Results" MODIFIED="1556423350359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$run.coverage" NAME="run Coverage Results" MODIFIED="1557547292422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$run.coverage" NAME="run Coverage Results" MODIFIED="1557737111685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$firsh__1_.coverage" NAME="firsh (1) Coverage Results" MODIFIED="1556588026559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1557384778882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1557719100497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/wangyiyun_pyqt5$mainWindowui.coverage" NAME="mainWindowui Coverage Results" MODIFIED="1556593174704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/view" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="135" column="51" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
+            <state relative-caret-position="195">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="e#34#45#0" expanded="true" />
-                <element signature="e#1098#2241#0" />
-                <element signature="e#4286#4832#0" />
-                <element signature="e#4881#5179#0" />
+                <element signature="e#815#999#0" />
+                <element signature="e#1051#1101#0" />
+                <element signature="e#1141#2284#0" />
+                <element signature="e#5492#5869#0" />
+                <element signature="e#5983#6281#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/add_shebei/add_equipment.py">
+        <entry file="file://$PROJECT_DIR$/app/view/add_material/new_material.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="255">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -65,26 +77,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/addMaterial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="135">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="e#17#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/model/newMaterial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="e#17#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/add_material/add_material.py">
+        <entry file="file://$PROJECT_DIR$/app/model/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-690">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="2162">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+              <folding>
+                <element signature="e#17#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/login/LoginMain.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="295">
+              <caret line="345" column="57" lean-forward="true" selection-start-line="345" selection-start-column="57" selection-end-line="345" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -92,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="420">
+              <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="62" />
               <folding>
                 <element signature="e#18#33#0" expanded="true" />
               </folding>
@@ -102,37 +142,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/http/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12780">
-              <caret line="433" selection-start-line="433" selection-end-line="433" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/wangyiyun-pyqt5-ypcrnu8q/Lib/site-packages/requests/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25110">
-              <caret line="870" selection-start-line="870" selection-end-line="870" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-145837805/PyQt5/QtCore/QThread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3930">
-              <caret line="134" column="28" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="480">
+              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+              <folding>
+                <element signature="e#17#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/server/material.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#17#32#0" expanded="true" />
               </folding>
@@ -175,19 +200,21 @@
         <option value="$PROJECT_DIR$/app/server/ServerBase.py" />
         <option value="$PROJECT_DIR$/app/server/hospital.py" />
         <option value="$PROJECT_DIR$/app/server/user.py" />
-        <option value="$PROJECT_DIR$/test/test3.py" />
         <option value="$PROJECT_DIR$/test/test4.py" />
         <option value="$PROJECT_DIR$/image/img.qrc" />
         <option value="$PROJECT_DIR$/app/model/main.py" />
-        <option value="$PROJECT_DIR$/app/model/user.py" />
-        <option value="$PROJECT_DIR$/app/view/main/mainWindowui.py" />
         <option value="$PROJECT_DIR$/app/view/login/LoginMain.py" />
         <option value="$PROJECT_DIR$/app/model/login.py" />
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/test/test5.py" />
         <option value="$PROJECT_DIR$/app/model/addMaaterial.py" />
+        <option value="$PROJECT_DIR$/test/test3.py" />
         <option value="$PROJECT_DIR$/app/model/addMaterial.py" />
+        <option value="$PROJECT_DIR$/app/model/user.py" />
+        <option value="$PROJECT_DIR$/app/view/main/mainWindowui.py" />
+        <option value="$PROJECT_DIR$/app/server/material.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/app/model/newMaterial.py" />
       </list>
     </option>
   </component>
@@ -209,6 +236,23 @@
             <path>
               <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
               <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wangyiyun-pyqt5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wangyiyun-pyqt5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,9 +430,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test3" />
         <item itemvalue="Python.test5" />
         <item itemvalue="Python.test4" />
-        <item itemvalue="Python.test3" />
         <item itemvalue="Python.test2" />
         <item itemvalue="Python.mainWindowui" />
       </list>
@@ -420,11 +464,12 @@
       <workItem from="1557477063592" duration="3457000" />
       <workItem from="1557535091027" duration="424000" />
       <workItem from="1557543092784" duration="3846000" />
+      <workItem from="1557714614997" duration="16411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106404000" />
+    <option name="totallyTimeSpent" value="122815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,14 +482,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3288337" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3347732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32912844" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49838012" weight="0.26376146" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45412844" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45412844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912844" />
@@ -452,7 +498,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32912844" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010799" side_tool="true" weight="0.4977064" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49892008" visible="true" weight="0.49655962" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49892008" weight="0.49542335" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32912844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -469,95 +515,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/model/user.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/model/user.py</url>
-          <line>23</line>
+          <line>21</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app/model/user.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="30" />
+          <url>file://$PROJECT_DIR$/run.py</url>
+          <line>255</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/server/user.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/server/material.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/model/newMaterial.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-145837805/PyQt5/QtWidgets/QMessageBox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4500">
-          <caret line="155" column="8" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-145837805/PyQt5/QtGui/QIcon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="130" column="12" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/wangyiyun-pyqt5-ypcrnu8q/Lib/site-packages/pyecharts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/wangyiyun-pyqt5-ypcrnu8q/Lib/site-packages/pyecharts/charts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#31#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/wangyiyun-pyqt5-ypcrnu8q/Lib/site-packages/pyecharts/charts/basic_charts/bar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/firsh.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#34#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test2.py" />
-    <entry file="file://$PROJECT_DIR$/image/user.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/img.qrc" />
-    <entry file="file://$PROJECT_DIR$/app/lib/img.py" />
-    <entry file="file://$PROJECT_DIR$/run.spec">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-145837805/PyQt5/QtWidgets/QMainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10980">
-          <caret line="371" column="8" selection-start-line="371" selection-start-column="8" selection-end-line="371" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/user/user.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/hospital/hospital.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -582,20 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/ServerBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/hospital.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -614,30 +584,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image/789.gif" />
-    <entry file="file://$PROJECT_DIR$/test/test4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#17#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/wangyiyun-pyqt5-ypcrnu8q/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/hospital.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -652,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/img.qrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -670,33 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/main/mainWindowui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61200">
-          <caret line="2040" selection-start-line="2040" selection-end-line="2040" />
         </state>
       </provider>
     </entry>
@@ -721,16 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="80" column="48" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="48" />
-          <folding>
-            <element signature="e#17#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -741,16 +643,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/login.py">
+    <entry file="file://$PROJECT_DIR$/app/view/add_shebei/add_equipment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#18#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/login/LoginMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -775,53 +678,214 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image/77.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/center.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/img.qrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/111.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/user2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/user.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/bb3.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/bb2.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/456.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#17#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/233.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="80" column="48" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="48" />
+          <folding>
+            <element signature="e#17#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="36" />
+          <folding>
+            <element signature="e#194#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/ServerBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.spec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/add_material/add_material.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="87" column="33" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main/mainWindowui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="2061" column="63" lean-forward="true" selection-start-line="2061" selection-start-column="63" selection-end-line="2061" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/wangyiyun-pyqt5-ypcrnu8q/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="480">
+          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
           <folding>
             <element signature="e#17#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/add_material/add_material.py">
+    <entry file="file://$PROJECT_DIR$/app/server/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="420">
+          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="e#18#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/login/LoginMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/addMaterial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/add_shebei/add_equipment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="135">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="135" column="51" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
+        <state relative-caret-position="195">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="e#34#45#0" expanded="true" />
-            <element signature="e#1098#2241#0" />
-            <element signature="e#4286#4832#0" />
-            <element signature="e#4881#5179#0" />
+            <element signature="e#815#999#0" />
+            <element signature="e#1051#1101#0" />
+            <element signature="e#1141#2284#0" />
+            <element signature="e#5492#5869#0" />
+            <element signature="e#5983#6281#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/add_material/new_material.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="345" column="57" lean-forward="true" selection-start-line="345" selection-start-column="57" selection-end-line="345" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2162">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/material.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/newMaterial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

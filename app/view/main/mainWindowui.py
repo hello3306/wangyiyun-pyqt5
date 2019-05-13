@@ -733,6 +733,37 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_25.setObjectName("pushButton_25")
         self.horizontalLayout_7.addWidget(self.pushButton_25)
+        self.pushButton_28 = QtWidgets.QPushButton(self.layoutWidget_2)
+        self.pushButton_28.setMinimumSize(QtCore.QSize(100, 0))
+        self.pushButton_28.setStyleSheet("\n"
+"\n"
+"text-align : center;\n"
+"background-color : rgb(0, 193, 222);\n"
+"font: bold;\n"
+"color:white;\n"
+"border-color: gray; \n"
+"border-width: 2px;\n"
+"border-radius: 10px;\n"
+"padding: 6px;\n"
+"height : 14px;\n"
+"border-style: outset;\n"
+"font : 14px;}\n"
+"QPushButton:pressed\n"
+"{text-align : center;\n"
+"background-color :rgb(0,0,0);\n"
+"font: bold;\n"
+"border-color: gray;\n"
+"border-width: 2px;\n"
+"border-radius: 10px;\n"
+"padding: 6px;\n"
+"height : 14px;\n"
+"border-style: outset;\n"
+"font : 14px;\n"
+"\n"
+"\n"
+"")
+        self.pushButton_28.setObjectName("pushButton_28")
+        self.horizontalLayout_7.addWidget(self.pushButton_28)
         self.pushButton_26 = QtWidgets.QPushButton(self.layoutWidget_2)
         self.pushButton_26.setMinimumSize(QtCore.QSize(100, 0))
         self.pushButton_26.setStyleSheet("\n"
@@ -1782,8 +1813,8 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menu_3.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
-        self.tabWidget_3.setCurrentIndex(6)
+        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget_3.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -1847,6 +1878,7 @@ class Ui_MainWindow(object):
         item = self.tableWidget_2.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "备注"))
         self.pushButton_25.setText(_translate("MainWindow", "搜索"))
+        self.pushButton_28.setText(_translate("MainWindow", "新增材料"))
         self.pushButton_26.setText(_translate("MainWindow", "添加材料"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_11), _translate("MainWindow", "待安装"))
         item = self.tableWidget_3.horizontalHeaderItem(0)

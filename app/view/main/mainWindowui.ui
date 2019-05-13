@@ -30,7 +30,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -1039,7 +1039,7 @@ font : 14px;
           <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="tab_11">
           <attribute name="title">
@@ -1160,6 +1160,48 @@ font : 14px;
               </property>
               <property name="text">
                <string>搜索</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_28">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+text-align : center;
+background-color : rgb(0, 193, 222);
+font: bold;
+color:white;
+border-color: gray; 
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;}
+QPushButton:pressed
+{text-align : center;
+background-color :rgb(0,0,0);
+font: bold;
+border-color: gray;
+border-width: 2px;
+border-radius: 10px;
+padding: 6px;
+height : 14px;
+border-style: outset;
+font : 14px;
+
+
+</string>
+              </property>
+              <property name="text">
+               <string>新增材料</string>
               </property>
              </widget>
             </item>

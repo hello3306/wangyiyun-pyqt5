@@ -49,17 +49,122 @@
          </property>
          <item>
           <property name="text">
-           <string>1</string>
+           <string>12v电源线</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>2</string>
+           <string>视频线1</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>3</string>
+           <string>无线接收模块</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>交流电源线</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>12VDC线</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>视频线2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>喇叭线</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>按键板连接线</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>黑色电源三孔插座</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20W开关电源</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>电源线</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>手动调焦镜头</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>摄像头模块组（IR_CUT组件）</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>铜柱（通孔）</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>铜柱（非通孔）</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>螺丝</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>石英片</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>小橡胶圈</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>大像胶圈</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>显示屏</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>扫码枪</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>摄像头及主板</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>内存卡</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>透明二极管</string>
           </property>
          </item>
         </widget>

@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtWidgets, Qt
+from image.img import *
 
 from PyQt5.QtGui import QMovie
 

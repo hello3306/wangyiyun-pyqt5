@@ -7,21 +7,20 @@ import time
 from app.model.user import userModel
 from image.img import *
 from PyQt5.QtCore import *
-
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
 from PyQt5 import QtWidgets, Qt
 from app.model.login import loginModel
-
 from app.config.setting import *
-
 from app.server.login import Login as LoginServer
 from app.view.login import LoginMain
 from app.view.main import mainWindowui
-
 from app.view.add_material import add_material
 from app.view.add_shebei import add_equipment
+from app.model.addMaterial import addMaterial as MaterialModel
+from app.view.add_material import new_material as newMaterialView
+from app.model.newMaterial import newMaterial as newMaterialModel
 
 
 class runMainWindoe(QtWidgets.QWidget):
@@ -76,6 +75,7 @@ class runMainWindoe(QtWidgets.QWidget):
                                     "用户名或密码错误(＾Ｕ＾)ノ~ＹＯ",
                                     QMessageBox.Yes)
 
+    # 保存登录信息
     def save_login_info(self, user, password):
         self.setting = QSettings("config.ini", QSettings.IniFormat)
         self.setting.setValue("user", user)
@@ -127,9 +127,29 @@ class runMainWindoe(QtWidgets.QWidget):
 
         # 添加材料点击事件
         self.main.pushButton_26.clicked.connect(self.showMaterials)
+        self.main.pushButton_28.clicked.connect(self.showNewMaterials)
 
         self.main.pushButton_24.clicked.connect(self.showAddEquipment)
 
+    # 显示新增材料的窗口
+    def showNewMaterials(self):
+        self.newMaterialMain = QMainWindow()
+        self.newMaterial = newMaterialView.Ui_MainWindow()
+        self.newMaterial.setupUi(self.newMaterialMain)
+        # 设置登录框的图标
+        self.newMaterialMain.setWindowIcon(QIcon(':/image/大数据1.png'))
+        # 禁止最大化
+        self.newMaterialMain.setFixedSize(self.newMaterialMain.width(), self.newMaterialMain.height())
+        self.newMaterialMain.show()
+        self.newMaterial.pushButton.clicked.connect(self.newMaterials)
+
+
+    def newMaterials(self):
+        materialModel = newMaterialModel(self.newMaterial, self.cache)
+        materialModel.run(self.newMaterial.lineEdit.text(), self.newMaterial.lineEdit_2.text(),
+                          self.newMaterial.lineEdit_3.text())
+
+    # 显示添加材料窗口
     def showAddEquipment(self):
         self.equipmentlMain = QMainWindow()
         self.equipment = add_equipment.Ui_MainWindow()
@@ -150,10 +170,27 @@ class runMainWindoe(QtWidgets.QWidget):
         self.materialMain.setWindowIcon(QIcon(':/image/大数据1.png'))
         # 禁止最大化
         self.materialMain.setFixedSize(self.materialMain.width(), self.materialMain.height())
+        # print(self.material.comboBox.currentText())
         self.materialMain.show()
+
+        self.material.pushButton.clicked.connect(self.addMaterial)
+        self.material.comboBox.setItemText(0, 'pppp')
+        # materialModel = MaterialModel(self.material)
+        # materialModel.run()
 
         # material = addMaterial()
         # material.run()
+
+    def addMaterial(self):
+        text = self.material.comboBox.currentText()
+        num = self.material.lineEdit.text()
+        if num == 0:
+            QMessageBox.warning(self,  # 使用infomation信息框
+                                "警告",
+                                "数量不能为空",
+                                QMessageBox.Yes)
+        print("材料名：" + text + "数量：" + str(num))
+        # self.materialMain.hide()
 
     # 查询
     def searh(self):
@@ -215,6 +252,8 @@ class runMainWindoe(QtWidgets.QWidget):
 
     def showSheibei0(self):
         self.main.tabWidget_3.setCurrentIndex(0)
+        materail = MaterialModel(self.main, self.cache)
+        materail.run()
 
     def showSheibei1(self):
         self.main.tabWidget_3.setCurrentIndex(1)
