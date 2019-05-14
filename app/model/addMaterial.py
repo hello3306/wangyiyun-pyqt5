@@ -5,8 +5,9 @@
 import json
 
 from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QMessageBox, QAbstractItemView
-from app.server.material import Material as  MaterialServer
+from PyQt5.QtWidgets import QAbstractItemView
+
+from app.server.material import Material as MaterialServer
 
 
 class addMaterial(QtWidgets.QWidget):
@@ -14,22 +15,30 @@ class addMaterial(QtWidgets.QWidget):
         self.material = material
         self.cache = cache
 
-
     def run(self):
         self.getAllMaterail()
-        # self.material.pushButton.clicked.connect(self.add)
 
+    # 添加材料的数量
     def add(self):
         text = self.material.comboBox.currentText()
-        num = int(self.material.lineEdit.text())
-        if num == 0:
-            QMessageBox.warning(self,  # 使用infomation信息框
-                                "警告",
-                                "数量不能为空",
-                                QMessageBox.Yes)
-        print("材料名：" + text + "数量：" + num)
+        num = self.material.lineEdit.text()
+        param = {'name': text, "num": num}
+        # material = MaterialServer(self.cache)
+        # data = material.addMaterial(param)
+        print(param)
 
+    # 获取所有的材料
     def getAllMaterail(self):
+        material = MaterialServer(self.cache)
+        data = material.getAllMaterial()
+        if data.status_code == 200:
+            x = 0
+            data = json.loads(data.text)
+            for i in data['data']:
+                self.material.comboBox.setItemText(x, i['name'])
+                x += 1
+
+    def setMaterial(self):
         material = MaterialServer(self.cache)
         data = material.getAllMaterial()
         if data.status_code == 200:

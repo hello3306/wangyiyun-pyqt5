@@ -4,10 +4,13 @@
 """
 import json
 
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QMessageBox
+
 from app.server.material import Material as MaterialServer
 
 
-class newMaterial():
+class newMaterial(QtWidgets.QWidget):
     def __init__(self, material, cache):
         self.cache = cache
         self.material = material
@@ -18,8 +21,5 @@ class newMaterial():
                  'Company': Company}
         Material = MaterialServer(self.cache)
         res = Material.newMaterial(param)
-        data = json.loads(res.text)
-        if res.status_code == 200:
-            print(data['msg'])
-        else:
-            print(data['msg'])
+
+        return res

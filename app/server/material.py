@@ -22,3 +22,8 @@ class Material():
         url = BASE_URL + "/Equipment/newMaterial"
         res = requests.post(url=url, data=param, headers=self.header)
         return res
+
+    def addMaterial(self, param):
+        url = BASE_URL + "/Equipment/addMaterial"
+        res = requests.post(url=url, data=param, headers=self.header)
+        return res

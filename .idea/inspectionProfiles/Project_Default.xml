@@ -5,10 +5,10 @@
       <option name="ignoredPackages">
         <value>
           <list size="5">
-            <item index="0" class="java.lang.String" itemvalue="pyqt5" />
-            <item index="1" class="java.lang.String" itemvalue="pyqt5-sip" />
-            <item index="2" class="java.lang.String" itemvalue="python-dotenv" />
-            <item index="3" class="java.lang.String" itemvalue="pyqt5-tools" />
+            <item index="0" class="java.lang.String" itemvalue="pyqt5-sip" />
+            <item index="1" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="2" class="java.lang.String" itemvalue="pyqt5-tools" />
+            <item index="3" class="java.lang.String" itemvalue="pyqt5" />
             <item index="4" class="java.lang.String" itemvalue="click" />
           </list>
         </value>

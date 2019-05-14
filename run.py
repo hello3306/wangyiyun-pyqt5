@@ -7,7 +7,6 @@ import time
 from image.img import *
 from app.model.user import userModel
 from PyQt5.QtCore import *
-
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from cacheout import Cache
@@ -17,18 +16,11 @@ from app.config.setting import *
 from app.server.login import Login as LoginServer
 from app.view.login import LoginMain
 from app.view.main import mainWindowui
-
-from app.view.add_material import add_material
-from app.view.add_shebei import add_equipment
 from app.model.addMaterial import addMaterial as MaterialModel
 from app.view.add_material import new_material as newMaterialView
 from app.model.newMaterial import newMaterial as newMaterialModel
-
 from app.view.add_material import add_material
 from app.view.add_shebei import add_equipment
-
-from PyQt5.QtWebEngineWidgets import QWebEngineView
-
 
 
 class runMainWindoe(QtWidgets.QWidget):
@@ -151,11 +143,22 @@ class runMainWindoe(QtWidgets.QWidget):
         self.newMaterialMain.show()
         self.newMaterial.pushButton.clicked.connect(self.newMaterials)
 
-
     def newMaterials(self):
         materialModel = newMaterialModel(self.newMaterial, self.cache)
-        materialModel.run(self.newMaterial.lineEdit.text(), self.newMaterial.lineEdit_2.text(),
-                          self.newMaterial.lineEdit_3.text())
+        res = materialModel.run(self.newMaterial.lineEdit.text(), self.newMaterial.lineEdit_2.text(),
+                                self.newMaterial.lineEdit_3.text())
+        data = json.loads(res.text)
+        if res.status_code == 200:
+            QMessageBox.about(self,  # 使用infomation信息框
+                              "信息",
+                              "添加成功")
+            print(data['msg'])
+        else:
+            QMessageBox.warning(self,  # 使用infomation信息框
+                                "信息",
+                                "添加失败",
+                                QMessageBox.Yes)
+            print(data['msg'])
 
     # 显示添加材料窗口
     def showAddEquipment(self):
@@ -179,26 +182,32 @@ class runMainWindoe(QtWidgets.QWidget):
         # 禁止最大化
         self.materialMain.setFixedSize(self.materialMain.width(), self.materialMain.height())
         # print(self.material.comboBox.currentText())
+        materialModel = MaterialModel(self.material, self.cache)
+        materialModel.run()
+
+        self.material.pushButton.clicked.connect(self.addMaterials)
+
         self.materialMain.show()
 
-        self.material.pushButton.clicked.connect(self.addMaterial)
-        self.material.comboBox.setItemText(0, 'pppp')
-        # materialModel = MaterialModel(self.material)
-        # materialModel.run()
-
-        # material = addMaterial()
-        # material.run()
-
-    def addMaterial(self):
+    def addMaterials(self):
+        from app.server.material import Material as MaterialServer
         text = self.material.comboBox.currentText()
         num = self.material.lineEdit.text()
-        if num == 0:
+        param = {'name': text, "num": num}
+        material = MaterialServer(self.cache)
+        data = material.addMaterial(param)
+        if data.status_code == 200:
+            QMessageBox.about(self,  # 使用infomation信息框
+                              "信息",
+                              "添加成功")
+            data = json.loads(data.text)
+            print(data)
+        else:
             QMessageBox.warning(self,  # 使用infomation信息框
-                                "警告",
-                                "数量不能为空",
+                                "信息",
+                                "添加失败",
                                 QMessageBox.Yes)
-        print("材料名：" + text + "数量：" + str(num))
-        # self.materialMain.hide()
+
 
     # 查询
     def searh(self):
@@ -207,32 +216,13 @@ class runMainWindoe(QtWidgets.QWidget):
 
     # 产妇管理
     def showUser(self):
-        # from app.model.user import userModel
         self.main.tabWidget.setCurrentIndex(0)
-        # user = User(self.cache)
-        # res = user.getUserInfo()
-        # if res.status_code == 200:
-        #     data = json.loads(res.text)
         UserModel = userModel(self.main, self.cache)
         UserModel.run()
-        # print(data['data'])
-
-        # else:
-        #     print("请求失败")
-        # self.UserMain = QMainWindow()
-        # self.user = user.Ui_UserMainWindow()
-        # self.user.setupUi(self.UserMain)
-        # self.UserMain.show()
 
     # 医院管理
     def showHospital(self):
         self.main.tabWidget.setCurrentIndex(1)
-        # self.HospitalMain = QMainWindow()
-        # self.hospital = hospital.Ui_HospitalMainWindow()
-        # self.hospital.setupUi(self.HospitalMain)
-        # self.HospitalMain.show()
-        # hModel = hospitalModel(self.hospital)
-        # hModel.run()
 
     # 设备管理
     def showEquipment(self):
@@ -261,7 +251,7 @@ class runMainWindoe(QtWidgets.QWidget):
     def showSheibei0(self):
         self.main.tabWidget_3.setCurrentIndex(0)
         materail = MaterialModel(self.main, self.cache)
-        materail.run()
+        materail.setMaterial()
 
     def showSheibei1(self):
         self.main.tabWidget_3.setCurrentIndex(1)
