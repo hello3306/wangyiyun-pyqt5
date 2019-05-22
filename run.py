@@ -8,7 +8,7 @@ from image.img import *
 from app.model.user import userModel
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QSystemTrayIcon, QMenu, QAction
 from cacheout import Cache
 from PyQt5 import QtWidgets, Qt
 from app.model.login import loginModel
@@ -23,11 +23,11 @@ from app.view.add_material import add_material
 from app.view.add_shebei import add_equipment
 
 
-class runMainWindoe(QtWidgets.QWidget):
+class runMainWindoe(QtWidgets.QWidget, QSystemTrayIcon):
 
     def __init__(self, ui):
         self.ui = ui
-        super().__init__()
+        super(runMainWindoe, self).__init__()
         self.cache = Cache(maxsize=MAXSIZE, ttl=TTL, timer=time.time)
 
     def run(self):
@@ -37,6 +37,14 @@ class runMainWindoe(QtWidgets.QWidget):
 
         self.ui.pushButton.clicked.connect(self.login)
         self.ui.pushButton_2.clicked.connect(self.onButtonClick)
+
+    def closeEvent(self, event):
+        reply = QtWidgets.QMessageBox.question(self, '警告', '退出后测试将停止,\n你确认要退出吗？',
+                                               QtWidgets.QMessageBox.Yes, QtWidgets.QMessageBox.No)
+        if reply == QtWidgets.QMessageBox.Yes:
+            event.accept()
+        else:
+            event.ignore()
 
     # 关闭登录窗口
     def onButtonClick(self):
@@ -83,6 +91,7 @@ class runMainWindoe(QtWidgets.QWidget):
 
     # 显示主页
     def showMain(self):
+        self.Tary()
         self.Main = QMainWindow()
         self.main = mainWindowui.Ui_MainWindow()
         self.main.setupUi(self.Main)
@@ -104,6 +113,43 @@ class runMainWindoe(QtWidgets.QWidget):
 
         Form.close()
 
+    # 右下角程序图标
+    def Tary(self):
+        self.tray = QSystemTrayIcon()
+
+        # 设置程序任务栏图标
+        self.tray.setIcon(QIcon(':/image/bb3.ico'))
+        # 是否在任务栏显示
+        self.tray.setVisible(True)
+        # 设置鼠标悬停显示信息
+        self.tray.setToolTip('宝宝云平台')
+
+        # 设置任务栏程序的菜单
+        self.menu = QMenu()
+
+        # 设置菜单列表
+        self.quitAction = QAction()
+        self.quitAction.setText('退出')
+        self.quitAction.setIcon(QIcon(':/image/tc.ico'))
+
+        # 添加进tray
+        self.menu.addAction(self.quitAction)
+        self.tray.setContextMenu(self.menu)
+
+        # 菜单的点击事件
+        self.quitAction.triggered.connect(self.quit)
+
+
+
+    # 退出程序
+    def quit(self):
+        # "保险起见，为了完整的退出"
+        self.tray.setVisible(False)
+        # self.tray.parent().exit()
+        #  qApp.quit()
+        sys.exit()
+
+    # 主页面按钮点击事件
     def pushButtons(self):
         # 顶部按钮点击事件
         self.main.pushButton.clicked.connect(self.showUser)
@@ -207,7 +253,6 @@ class runMainWindoe(QtWidgets.QWidget):
                                 "信息",
                                 "添加失败",
                                 QMessageBox.Yes)
-
 
     # 查询
     def searh(self):
